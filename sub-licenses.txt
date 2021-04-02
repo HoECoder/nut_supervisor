@@ -1,0 +1,6 @@
+Per the rules of the other licences, here they are:
+
+s6-overlay - Internet Systems Consortium License - ISCL.md
+s6 - Internet Systems Consortium License - ISCL.md
+proc - MIT License - LICENSE.md
+click - BSD 3-Clause - BSD_License.md
