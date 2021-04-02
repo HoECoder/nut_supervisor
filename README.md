@@ -9,6 +9,12 @@ So what this does is provide to the startup and management of the driver. It wil
 
 Thus far, I've only tested it connected to a single UPS, but it seems to work reliably. I have had it running for days at a time and it does appear, to the outside user, to result in a UPS status that is always there.
 
+## Packages Used
+
+I used the wonderful [click](https://click.palletsprojects.com/en/7.x/) package for the CLI.
+
+I used the [proc](https://proc.readthedocs.io/en/latest/) package for handy, python-only access to the `/proc` filesystem in a pythonic way. This is used to find and kill the drivers if they hang.
+
 ## Docker
 I've also included a Dockerfile that will make a nice all-in-one container that will install nut and its dependencies, do a basic configuration, and monitor the UPS from there.
 
