@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  supervised_nut:
+    image: cyberpowernut:0.1
+    container_name: supervised_nut
+    volumes:
+      - /path/to/private/nut_supervisor/etc-nut:/etc/nut
+    ports:
+      - 3493:3493
+    devices:
+      - "/dev/bus/usb:/dev/bus/usb"
+    restart: unless-stopped
